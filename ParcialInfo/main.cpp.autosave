@@ -3,6 +3,7 @@
 #include <QGraphicsRectItem>
 #include <QApplication>
 #include <fstream>
+#include <iostream>
 #include "mainwindow.h"
 #include "entrada.h"
 
