@@ -1,10 +1,14 @@
-#include "mainwindow.h"
+#include <QGraphicsScene>
+#include <QGraphicsView>
+#include <QGraphicsRectItem>
 #include <QApplication>
+#include "mainwindow.h"
+#include "entrada.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
+    Entrada w;
     w.show();
 
     return a.exec();

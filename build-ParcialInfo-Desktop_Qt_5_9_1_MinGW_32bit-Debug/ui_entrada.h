@@ -1,0 +1,88 @@
+/********************************************************************************
+** Form generated from reading UI file 'entrada.ui'
+**
+** Created by: Qt User Interface Compiler version 5.9.1
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
+
+#ifndef UI_ENTRADA_H
+#define UI_ENTRADA_H
+
+#include <QtCore/QVariant>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QWidget>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_Entrada
+{
+public:
+    QLabel *fondo;
+    QPushButton *admon;
+    QPushButton *clientes;
+    QLineEdit *contra;
+    QLineEdit *nombre;
+    QLabel *labcpmtra;
+    QLabel *labnombre;
+
+    void setupUi(QWidget *Entrada)
+    {
+        if (Entrada->objectName().isEmpty())
+            Entrada->setObjectName(QStringLiteral("Entrada"));
+        Entrada->resize(478, 334);
+        fondo = new QLabel(Entrada);
+        fondo->setObjectName(QStringLiteral("fondo"));
+        fondo->setGeometry(QRect(80, 50, 331, 231));
+        fondo->setPixmap(QPixmap(QString::fromUtf8(":/images.png")));
+        fondo->setScaledContents(true);
+        admon = new QPushButton(Entrada);
+        admon->setObjectName(QStringLiteral("admon"));
+        admon->setGeometry(QRect(110, 200, 81, 31));
+        clientes = new QPushButton(Entrada);
+        clientes->setObjectName(QStringLiteral("clientes"));
+        clientes->setGeometry(QRect(290, 200, 81, 31));
+        contra = new QLineEdit(Entrada);
+        contra->setObjectName(QStringLiteral("contra"));
+        contra->setGeometry(QRect(100, 160, 113, 20));
+        nombre = new QLineEdit(Entrada);
+        nombre->setObjectName(QStringLiteral("nombre"));
+        nombre->setGeometry(QRect(270, 160, 113, 20));
+        labcpmtra = new QLabel(Entrada);
+        labcpmtra->setObjectName(QStringLiteral("labcpmtra"));
+        labcpmtra->setGeometry(QRect(90, 120, 141, 41));
+        labcpmtra->setTextFormat(Qt::AutoText);
+        labnombre = new QLabel(Entrada);
+        labnombre->setObjectName(QStringLiteral("labnombre"));
+        labnombre->setGeometry(QRect(260, 120, 121, 41));
+
+        retranslateUi(Entrada);
+
+        QMetaObject::connectSlotsByName(Entrada);
+    } // setupUi
+
+    void retranslateUi(QWidget *Entrada)
+    {
+        Entrada->setWindowTitle(QApplication::translate("Entrada", "Form", Q_NULLPTR));
+        fondo->setText(QString());
+        admon->setText(QApplication::translate("Entrada", "Administracion", Q_NULLPTR));
+        clientes->setText(QApplication::translate("Entrada", "Clientes", Q_NULLPTR));
+        labcpmtra->setText(QApplication::translate("Entrada", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">CONTRASE\303\221A DE ADMON</span></p></body></html>", Q_NULLPTR));
+        labnombre->setText(QApplication::translate("Entrada", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">NOMBRE CLIENTE</span></p></body></html>", Q_NULLPTR));
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class Entrada: public Ui_Entrada {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_ENTRADA_H

@@ -25,10 +25,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    entrada.cpp \
+    administrador.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    entrada.h \
+    administrador.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    entrada.ui \
+    administrador.ui
+
+RESOURCES += \
+    resource.qrc
+
+DISTFILES +=
