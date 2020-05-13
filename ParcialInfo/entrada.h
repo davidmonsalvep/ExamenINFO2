@@ -3,8 +3,10 @@
 
 #include <QWidget>
 #include <iostream>
-#include <QMainWindow>
 #include <fstream>
+#include <QMainWindow>
+#include <QMessageBox>
+#include "administrador.h"
 
 namespace Ui {
 class Entrada;

@@ -31,6 +31,8 @@ public:
     QLineEdit *nombre;
     QLabel *labcpmtra;
     QLabel *labnombre;
+    QLabel *labnombre_2;
+    QLineEdit *cedula;
 
     void setupUi(QWidget *Entrada)
     {
@@ -50,17 +52,25 @@ public:
         clientes->setGeometry(QRect(290, 200, 81, 31));
         contra = new QLineEdit(Entrada);
         contra->setObjectName(QStringLiteral("contra"));
-        contra->setGeometry(QRect(100, 160, 113, 20));
+        contra->setGeometry(QRect(100, 140, 113, 20));
+        contra->setEchoMode(QLineEdit::Password);
         nombre = new QLineEdit(Entrada);
         nombre->setObjectName(QStringLiteral("nombre"));
-        nombre->setGeometry(QRect(270, 160, 113, 20));
+        nombre->setGeometry(QRect(270, 110, 113, 20));
         labcpmtra = new QLabel(Entrada);
         labcpmtra->setObjectName(QStringLiteral("labcpmtra"));
-        labcpmtra->setGeometry(QRect(90, 120, 141, 41));
+        labcpmtra->setGeometry(QRect(90, 90, 141, 41));
         labcpmtra->setTextFormat(Qt::AutoText);
         labnombre = new QLabel(Entrada);
         labnombre->setObjectName(QStringLiteral("labnombre"));
-        labnombre->setGeometry(QRect(260, 120, 121, 41));
+        labnombre->setGeometry(QRect(270, 90, 121, 21));
+        labnombre_2 = new QLabel(Entrada);
+        labnombre_2->setObjectName(QStringLiteral("labnombre_2"));
+        labnombre_2->setGeometry(QRect(280, 140, 91, 21));
+        cedula = new QLineEdit(Entrada);
+        cedula->setObjectName(QStringLiteral("cedula"));
+        cedula->setGeometry(QRect(270, 160, 113, 20));
+        cedula->setEchoMode(QLineEdit::Normal);
 
         retranslateUi(Entrada);
 
@@ -75,6 +85,7 @@ public:
         clientes->setText(QApplication::translate("Entrada", "Clientes", Q_NULLPTR));
         labcpmtra->setText(QApplication::translate("Entrada", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">CONTRASE\303\221A DE ADMON</span></p></body></html>", Q_NULLPTR));
         labnombre->setText(QApplication::translate("Entrada", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">NOMBRE CLIENTE</span></p></body></html>", Q_NULLPTR));
+        labnombre_2->setText(QApplication::translate("Entrada", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">CEDULA</span></p></body></html>", Q_NULLPTR));
     } // retranslateUi
 
 };
