@@ -27,12 +27,14 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     entrada.cpp \
-    administrador.cpp
+    administrador.cpp \
+    gerencia.cpp
 
 HEADERS += \
         mainwindow.h \
     entrada.h \
-    administrador.h
+    administrador.h \
+    gerencia.h
 
 FORMS += \
         mainwindow.ui \

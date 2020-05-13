@@ -53,17 +53,17 @@ void Entrada::on_admon_clicked()   //para entrar al modo admon
 void Entrada::on_clientes_clicked()  //para entrar al modo cliente
 {
     QString nombre=ui->nombre->text();                   //nombre del cliente
-    QString cedula=ui->cedula->text();                   //cedula del cliente
+    QString asiento=ui->asiento->text();                   //asiento del cliente
     string nomb=nombre.toLocal8Bit().constData();
-    string cedu=cedula.toLocal8Bit().constData();
-    string escribir=nomb+","+cedu+","+","+","+".";
+    string asi=asiento.toLocal8Bit().constData();
+    string escribir=nomb+","+asi+","+","+","+".";
     ofstream archivo;
-    archivo.open("clientes.txt",std::ios::app | std::ios::ate);
+    archivo.open("clientes.txt",std::ios::app | std::ios::ate); //para escribir en el archivo que guarda el nombre y asiento del cliente
     archivo<<escribir<<"\n";
     archivo.close();
     QMessageBox::about(this,"Hecho","Listo! Que deseas ordenar.");
 
-    MainWindow* entrada=new MainWindow();
+    MainWindow* entrada=new MainWindow();  //cambia de formulario
     entrada->show();
     this->close();
 
