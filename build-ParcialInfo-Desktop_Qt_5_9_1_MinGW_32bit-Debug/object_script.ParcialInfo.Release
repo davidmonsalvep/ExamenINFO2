@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\entrada.o
+./release\administrador.o
+./release\crearcombo.o
+./release\qrc_resource.o
+./release\moc_mainwindow.o
+./release\moc_entrada.o
+./release\moc_administrador.o
+./release\moc_crearcombo.o
+);

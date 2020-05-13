@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\entrada.o
+./debug\administrador.o
+./debug\crearcombo.o
+./debug\qrc_resource.o
+./debug\moc_mainwindow.o
+./debug\moc_entrada.o
+./debug\moc_administrador.o
+./debug\moc_crearcombo.o
+);

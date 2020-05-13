@@ -32,7 +32,8 @@ public:
     QLabel *labcpmtra;
     QLabel *labnombre;
     QLabel *labnombre_2;
-    QLineEdit *cedula;
+    QLineEdit *asiento;
+    QLabel *label;
 
     void setupUi(QWidget *Entrada)
     {
@@ -41,7 +42,7 @@ public:
         Entrada->resize(478, 334);
         fondo = new QLabel(Entrada);
         fondo->setObjectName(QStringLiteral("fondo"));
-        fondo->setGeometry(QRect(80, 50, 331, 231));
+        fondo->setGeometry(QRect(0, 0, 481, 331));
         fondo->setPixmap(QPixmap(QString::fromUtf8(":/images.png")));
         fondo->setScaledContents(true);
         admon = new QPushButton(Entrada);
@@ -59,18 +60,21 @@ public:
         nombre->setGeometry(QRect(270, 110, 113, 20));
         labcpmtra = new QLabel(Entrada);
         labcpmtra->setObjectName(QStringLiteral("labcpmtra"));
-        labcpmtra->setGeometry(QRect(90, 90, 141, 41));
+        labcpmtra->setGeometry(QRect(70, 90, 161, 41));
         labcpmtra->setTextFormat(Qt::AutoText);
         labnombre = new QLabel(Entrada);
         labnombre->setObjectName(QStringLiteral("labnombre"));
         labnombre->setGeometry(QRect(270, 90, 121, 21));
         labnombre_2 = new QLabel(Entrada);
         labnombre_2->setObjectName(QStringLiteral("labnombre_2"));
-        labnombre_2->setGeometry(QRect(280, 140, 91, 21));
-        cedula = new QLineEdit(Entrada);
-        cedula->setObjectName(QStringLiteral("cedula"));
-        cedula->setGeometry(QRect(270, 160, 113, 20));
-        cedula->setEchoMode(QLineEdit::Normal);
+        labnombre_2->setGeometry(QRect(250, 140, 151, 21));
+        asiento = new QLineEdit(Entrada);
+        asiento->setObjectName(QStringLiteral("asiento"));
+        asiento->setGeometry(QRect(270, 160, 113, 20));
+        asiento->setEchoMode(QLineEdit::Normal);
+        label = new QLabel(Entrada);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(160, 30, 181, 51));
 
         retranslateUi(Entrada);
 
@@ -83,9 +87,10 @@ public:
         fondo->setText(QString());
         admon->setText(QApplication::translate("Entrada", "Administracion", Q_NULLPTR));
         clientes->setText(QApplication::translate("Entrada", "Clientes", Q_NULLPTR));
-        labcpmtra->setText(QApplication::translate("Entrada", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">CONTRASE\303\221A DE ADMON</span></p></body></html>", Q_NULLPTR));
-        labnombre->setText(QApplication::translate("Entrada", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">NOMBRE CLIENTE</span></p></body></html>", Q_NULLPTR));
-        labnombre_2->setText(QApplication::translate("Entrada", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">CEDULA</span></p></body></html>", Q_NULLPTR));
+        labcpmtra->setText(QApplication::translate("Entrada", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:600; color:#ffff00;\">CONTRASE\303\221A DE ADMON</span></p></body></html>", Q_NULLPTR));
+        labnombre->setText(QApplication::translate("Entrada", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:600; color:#ffff00;\">NOMBRE CLIENTE</span></p></body></html>", Q_NULLPTR));
+        labnombre_2->setText(QApplication::translate("Entrada", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:600; color:#ffff00;\">NUMERO DE SU ASIENTO</span></p></body></html>", Q_NULLPTR));
+        label->setText(QApplication::translate("Entrada", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600; color:#ffff00;\">CINEMAS INFO II</span></p></body></html>", Q_NULLPTR));
     } // retranslateUi
 
 };

@@ -28,18 +28,19 @@ SOURCES += \
         mainwindow.cpp \
     entrada.cpp \
     administrador.cpp \
-    gerencia.cpp
+    crearcombo.cpp
 
 HEADERS += \
         mainwindow.h \
     entrada.h \
     administrador.h \
-    gerencia.h
+    crearcombo.h
 
 FORMS += \
         mainwindow.ui \
     entrada.ui \
-    administrador.ui
+    administrador.ui \
+    crearcombo.ui
 
 RESOURCES += \
     resource.qrc

@@ -15,6 +15,13 @@ public:
     explicit administrador(QWidget *parent = 0);
     ~administrador();
 
+private slots:
+    void on_agregar_clicked();
+
+    void on_estadisticas_clicked();
+
+    void on_combos_clicked();
+
 private:
     Ui::administrador *ui;
 };
