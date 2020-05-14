@@ -2,6 +2,14 @@
 #define ADMINISTRADOR_H
 
 #include <QWidget>
+#include <fstream>
+#include <QMessageBox>
+#include <iterator>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <map>
+using namespace std;
 
 namespace Ui {
 class administrador;
@@ -14,6 +22,11 @@ class administrador : public QWidget
 public:
     explicit administrador(QWidget *parent = 0);
     ~administrador();
+
+    map<string,int>inventario;
+
+    map<string, int> getInventario() const;
+    void setInventario(const map<string, int> &value);
 
 private slots:
     void on_agregar_clicked();
