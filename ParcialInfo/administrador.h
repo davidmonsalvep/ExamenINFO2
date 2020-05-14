@@ -10,6 +10,7 @@
 #include <vector>
 #include <map>
 #include "entrada.h"
+#include "crearcombo.h"
 
 using namespace std;
 

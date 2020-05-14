@@ -10,6 +10,7 @@
 
 
 
+
 using namespace std;
 
 administrador::administrador(QWidget *parent) :
@@ -118,17 +119,13 @@ void administrador::on_agregar_clicked()
 
 }
 
-void administrador::on_estadisticas_clicked()
+void administrador::on_estadisticas_clicked() //permite ver las ventas
 {
 
 }
 
-void administrador::on_combos_clicked()
-{
 
-}
-
-void administrador::on_back_clicked()
+void administrador::on_back_clicked()  //devuelve al pantallazo inicial
 {
   Entrada* administrador=new Entrada();
   administrador->show();
@@ -136,17 +133,24 @@ void administrador::on_back_clicked()
 }
 
 
-void administrador::on_inventario_clicked()
+void administrador::on_inventario_clicked()   //para poder ver el inventario
 {
-    QString qst="";
+    QString qst="";                           //coloca el cuadro vacio por defecto
     ui->textBrowser->setText(qst);
- map<string,int>mapa=getInventario();
+
  ifstream archivo;
  archivo.open("inventario.txt");
  string line;
  QString qstr;
- while(getline(archivo,line)){
+ while(getline(archivo,line)){                         //se lee el archivo que posee el inventario y se añade a la caja de texto
      qstr=QString::fromStdString(line);
 
  ui->textBrowser->append(qstr);}
+}
+
+void administrador::on_combos_clicked()  //para crear combos
+{
+    crearcombo* administrador=new crearcombo();
+    administrador->show();
+    this->close();
 }

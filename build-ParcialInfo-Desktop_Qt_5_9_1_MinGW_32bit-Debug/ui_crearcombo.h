@@ -15,6 +15,8 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -23,17 +25,25 @@ class Ui_crearcombo
 {
 public:
     QLabel *label;
+    QTextBrowser *textBrowser;
+    QPushButton *inventario;
 
     void setupUi(QWidget *crearcombo)
     {
         if (crearcombo->objectName().isEmpty())
             crearcombo->setObjectName(QStringLiteral("crearcombo"));
-        crearcombo->resize(574, 382);
+        crearcombo->resize(704, 407);
         label = new QLabel(crearcombo);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(0, 0, 581, 381));
+        label->setGeometry(QRect(20, 10, 711, 411));
         label->setPixmap(QPixmap(QString::fromUtf8(":/cinema.png")));
         label->setScaledContents(true);
+        textBrowser = new QTextBrowser(crearcombo);
+        textBrowser->setObjectName(QStringLiteral("textBrowser"));
+        textBrowser->setGeometry(QRect(465, 90, 211, 231));
+        inventario = new QPushButton(crearcombo);
+        inventario->setObjectName(QStringLiteral("inventario"));
+        inventario->setGeometry(QRect(470, 50, 181, 23));
 
         retranslateUi(crearcombo);
 
@@ -44,6 +54,7 @@ public:
     {
         crearcombo->setWindowTitle(QApplication::translate("crearcombo", "Form", Q_NULLPTR));
         label->setText(QString());
+        inventario->setText(QApplication::translate("crearcombo", "Inventario disponible para combos", Q_NULLPTR));
     } // retranslateUi
 
 };

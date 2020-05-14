@@ -2,6 +2,7 @@
 #define CREARCOMBO_H
 
 #include <QWidget>
+#include "administrador.h"
 
 namespace Ui {
 class crearcombo;
@@ -14,6 +15,9 @@ class crearcombo : public QWidget
 public:
     explicit crearcombo(QWidget *parent = 0);
     ~crearcombo();
+
+private slots:
+    void on_inventario_clicked();
 
 private:
     Ui::crearcombo *ui;
