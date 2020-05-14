@@ -18,6 +18,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpinBox>
+#include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -36,16 +37,19 @@ public:
     QLabel *label_6;
     QPushButton *estadisticas;
     QLabel *label_5;
-    QPushButton *pushButton;
+    QPushButton *back;
+    QLabel *label_7;
+    QPushButton *inventario;
+    QTextBrowser *textBrowser;
 
     void setupUi(QWidget *administrador)
     {
         if (administrador->objectName().isEmpty())
             administrador->setObjectName(QStringLiteral("administrador"));
-        administrador->resize(692, 331);
+        administrador->resize(813, 452);
         label = new QLabel(administrador);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(0, 0, 691, 331));
+        label->setGeometry(QRect(0, 0, 811, 451));
         label->setPixmap(QPixmap(QString::fromUtf8(":/cinema.png")));
         label->setScaledContents(true);
         label_2 = new QLabel(administrador);
@@ -68,19 +72,28 @@ public:
         cantidad->setGeometry(QRect(80, 150, 111, 22));
         combos = new QPushButton(administrador);
         combos->setObjectName(QStringLiteral("combos"));
-        combos->setGeometry(QRect(490, 100, 151, 71));
+        combos->setGeometry(QRect(250, 100, 101, 71));
         label_6 = new QLabel(administrador);
         label_6->setObjectName(QStringLiteral("label_6"));
-        label_6->setGeometry(QRect(290, 60, 151, 16));
+        label_6->setGeometry(QRect(400, 60, 151, 21));
         estadisticas = new QPushButton(administrador);
         estadisticas->setObjectName(QStringLiteral("estadisticas"));
-        estadisticas->setGeometry(QRect(260, 100, 171, 71));
+        estadisticas->setGeometry(QRect(410, 100, 91, 71));
         label_5 = new QLabel(administrador);
         label_5->setObjectName(QStringLiteral("label_5"));
-        label_5->setGeometry(QRect(530, 60, 121, 16));
-        pushButton = new QPushButton(administrador);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(550, 290, 75, 23));
+        label_5->setGeometry(QRect(250, 60, 121, 21));
+        back = new QPushButton(administrador);
+        back->setObjectName(QStringLiteral("back"));
+        back->setGeometry(QRect(680, 400, 75, 23));
+        label_7 = new QLabel(administrador);
+        label_7->setObjectName(QStringLiteral("label_7"));
+        label_7->setGeometry(QRect(620, 60, 91, 16));
+        inventario = new QPushButton(administrador);
+        inventario->setObjectName(QStringLiteral("inventario"));
+        inventario->setGeometry(QRect(600, 100, 111, 31));
+        textBrowser = new QTextBrowser(administrador);
+        textBrowser->setObjectName(QStringLiteral("textBrowser"));
+        textBrowser->setGeometry(QRect(530, 141, 256, 231));
 
         retranslateUi(administrador);
 
@@ -99,7 +112,9 @@ public:
         label_6->setText(QApplication::translate("administrador", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600; color:#ffff00;\">Contabilidad</span></p></body></html>", Q_NULLPTR));
         estadisticas->setText(QApplication::translate("administrador", "Ver estadisticas", Q_NULLPTR));
         label_5->setText(QApplication::translate("administrador", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600; color:#ffff00;\">Combos</span></p></body></html>", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("administrador", "Regresar", Q_NULLPTR));
+        back->setText(QApplication::translate("administrador", "Regresar", Q_NULLPTR));
+        label_7->setText(QApplication::translate("administrador", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600; color:#ffff00;\">Inventario</span></p></body></html>", Q_NULLPTR));
+        inventario->setText(QApplication::translate("administrador", "Ver inventario", Q_NULLPTR));
     } // retranslateUi
 
 };

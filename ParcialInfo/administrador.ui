@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>692</width>
-    <height>331</height>
+    <width>813</width>
+    <height>452</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,8 +18,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>691</width>
-     <height>331</height>
+     <width>811</width>
+     <height>451</height>
     </rect>
    </property>
    <property name="text">
@@ -107,9 +107,9 @@
   <widget class="QPushButton" name="combos">
    <property name="geometry">
     <rect>
-     <x>490</x>
+     <x>250</x>
      <y>100</y>
-     <width>151</width>
+     <width>101</width>
      <height>71</height>
     </rect>
    </property>
@@ -120,10 +120,10 @@
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>290</x>
+     <x>400</x>
      <y>60</y>
      <width>151</width>
-     <height>16</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
@@ -133,9 +133,9 @@
   <widget class="QPushButton" name="estadisticas">
    <property name="geometry">
     <rect>
-     <x>260</x>
+     <x>410</x>
      <y>100</y>
-     <width>171</width>
+     <width>91</width>
      <height>71</height>
     </rect>
    </property>
@@ -146,27 +146,63 @@
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>530</x>
+     <x>250</x>
      <y>60</y>
      <width>121</width>
-     <height>16</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffff00;&quot;&gt;Combos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="back">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>290</y>
+     <x>680</x>
+     <y>400</y>
      <width>75</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
     <string>Regresar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>60</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffff00;&quot;&gt;Inventario&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="inventario">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>100</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ver inventario</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>141</y>
+     <width>256</width>
+     <height>231</height>
+    </rect>
    </property>
   </widget>
  </widget>

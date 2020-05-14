@@ -41,7 +41,7 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(50, 30, 461, 261));
+        label->setGeometry(QRect(0, 0, 571, 371));
         label->setPixmap(QPixmap(QString::fromUtf8(":/images.png")));
         label->setScaledContents(true);
         MainWindow->setCentralWidget(centralWidget);

@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -21,12 +22,18 @@ QT_BEGIN_NAMESPACE
 class Ui_crearcombo
 {
 public:
+    QLabel *label;
 
     void setupUi(QWidget *crearcombo)
     {
         if (crearcombo->objectName().isEmpty())
             crearcombo->setObjectName(QStringLiteral("crearcombo"));
-        crearcombo->resize(400, 300);
+        crearcombo->resize(574, 382);
+        label = new QLabel(crearcombo);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(0, 0, 581, 381));
+        label->setPixmap(QPixmap(QString::fromUtf8(":/cinema.png")));
+        label->setScaledContents(true);
 
         retranslateUi(crearcombo);
 
@@ -36,6 +43,7 @@ public:
     void retranslateUi(QWidget *crearcombo)
     {
         crearcombo->setWindowTitle(QApplication::translate("crearcombo", "Form", Q_NULLPTR));
+        label->setText(QString());
     } // retranslateUi
 
 };

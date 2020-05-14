@@ -9,6 +9,8 @@
 #include <string>
 #include <vector>
 #include <map>
+#include "entrada.h"
+
 using namespace std;
 
 namespace Ui {
@@ -34,6 +36,12 @@ private slots:
     void on_estadisticas_clicked();
 
     void on_combos_clicked();
+
+    void on_back_clicked();
+
+    void on_pushButton_2_clicked();
+
+    void on_inventario_clicked();
 
 private:
     Ui::administrador *ui;
