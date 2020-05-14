@@ -29,3 +29,8 @@ void crearcombo::on_inventario_clicked()
 }
 
 
+
+void crearcombo::on_agregar_clicked()
+{
+
+}
