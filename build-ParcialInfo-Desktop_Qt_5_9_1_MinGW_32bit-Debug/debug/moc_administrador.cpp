@@ -90,7 +90,7 @@ void administrador::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 1: _t->on_estadisticas_clicked(); break;
         case 2: _t->on_combos_clicked(); break;
         case 3: _t->on_back_clicked(); break;
-        //case 4: _t->on_pushButton_2_clicked(); break;
+        case 4: _t->on_pushButton_2_clicked(); break;
         case 5: _t->on_inventario_clicked(); break;
         default: ;
         }

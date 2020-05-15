@@ -34,6 +34,7 @@ public:
     QLabel *labnombre_2;
     QLineEdit *asiento;
     QLabel *label;
+    QPushButton *pushButton_2;
 
     void setupUi(QWidget *Entrada)
     {
@@ -75,6 +76,9 @@ public:
         label = new QLabel(Entrada);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(160, 30, 181, 51));
+        pushButton_2 = new QPushButton(Entrada);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setGeometry(QRect(400, 300, 71, 21));
 
         retranslateUi(Entrada);
 
@@ -91,6 +95,7 @@ public:
         labnombre->setText(QApplication::translate("Entrada", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:600; color:#ffff00;\">NOMBRE CLIENTE</span></p></body></html>", Q_NULLPTR));
         labnombre_2->setText(QApplication::translate("Entrada", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt; font-weight:600; color:#ffff00;\">NUMERO DE SU ASIENTO</span></p></body></html>", Q_NULLPTR));
         label->setText(QApplication::translate("Entrada", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600; color:#ffff00;\">CINEMAS INFO II</span></p></body></html>", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("Entrada", "Cinemas", Q_NULLPTR));
     } // retranslateUi
 
 };

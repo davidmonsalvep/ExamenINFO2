@@ -107,14 +107,16 @@ void crearcombo::on_fijar_clicked()
     map<string,int>mapa=getCombo();
     map<string,int>::iterator it;
     ofstream archi;
-    archi.open("listacombos.txt",ios::app | ios::ate);        //escribe en el archivo  admon el nuevo combo
+
+    archi.open("listacombos.txt",ios::app | ios::ate);        //escribe en el archivo listacombos el nuevo combo
     for(it=mapa.begin();it!=mapa.end();it++){
-        archi<<it->second<<"-"<<it->first<<endl;
+        archi<<it->second<<"-"<<it->first;
     }
     archi<<"$ "<<valorventa<<endl;
 
 
 
+    archi.close();
   ui->fijar->setDisabled(true);
 
 

@@ -41,6 +41,7 @@ public:
     QLabel *label_7;
     QPushButton *inventario;
     QTextBrowser *textBrowser;
+    QPushButton *pushButton_2;
 
     void setupUi(QWidget *administrador)
     {
@@ -94,6 +95,9 @@ public:
         textBrowser = new QTextBrowser(administrador);
         textBrowser->setObjectName(QStringLiteral("textBrowser"));
         textBrowser->setGeometry(QRect(530, 141, 256, 231));
+        pushButton_2 = new QPushButton(administrador);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setGeometry(QRect(20, 350, 75, 23));
 
         retranslateUi(administrador);
 
@@ -115,6 +119,7 @@ public:
         back->setText(QApplication::translate("administrador", "Regresar", Q_NULLPTR));
         label_7->setText(QApplication::translate("administrador", "<html><head/><body><p><span style=\" font-size:12pt; font-weight:600; color:#ffff00;\">Inventario</span></p></body></html>", Q_NULLPTR));
         inventario->setText(QApplication::translate("administrador", "Ver inventario", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("administrador", "Cinema", Q_NULLPTR));
     } // retranslateUi
 
 };

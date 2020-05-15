@@ -99,7 +99,7 @@ public:
         pushButton->setText(QApplication::translate("MainWindow", "Comprar", Q_NULLPTR));
         label_2->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600; color:#00007f;\">Combos disponibles</span></p></body></html>", Q_NULLPTR));
         label_3->setText(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600; color:#ffff00;\">Seleccione el # de combo</span></p></body></html>", Q_NULLPTR));
-        pushButton_2->setText(QApplication::translate("MainWindow", "Regreasar", Q_NULLPTR));
+        pushButton_2->setText(QApplication::translate("MainWindow", "Regresar", Q_NULLPTR));
     } // retranslateUi
 
 };

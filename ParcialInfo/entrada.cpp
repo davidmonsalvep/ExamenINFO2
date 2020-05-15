@@ -56,14 +56,14 @@ void Entrada::on_clientes_clicked()  //para entrar al modo cliente
     QString asiento=ui->asiento->text();                   //asiento del cliente
     string nomb=nombre.toLocal8Bit().constData();
     string asi=asiento.toLocal8Bit().constData();
-    string escribir=nomb+","+asi;
+
     ofstream archiv;  //borra todo el archivo para sobreescribirlo con los nuevos datos
     archiv.open("clientes.txt",ofstream::out | ofstream::trunc);
     archiv.close();
 
     ofstream archivo;
     archivo.open("clientes.txt",std::ios::app | std::ios::ate); //para escribir en el archivo que guarda el nombre y asiento del cliente
-    archivo<<escribir<<"\n";
+    archivo<<nomb<<" Asiento: "<<asi<<endl;
     archivo.close();
     QMessageBox::about(this,"Hecho","Listo! Que deseas ordenar.");
 
@@ -74,5 +74,10 @@ void Entrada::on_clientes_clicked()  //para entrar al modo cliente
 
 
 
+
+}
+
+void Entrada::on_pushButton_2_clicked()
+{
 
 }

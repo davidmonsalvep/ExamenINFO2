@@ -154,3 +154,8 @@ void administrador::on_combos_clicked()  //para crear combos
     administrador->show();
     this->close();
 }
+
+void administrador::on_pushButton_2_clicked()
+{
+
+}
