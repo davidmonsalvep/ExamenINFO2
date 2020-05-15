@@ -1,0 +1,6 @@
+2-crispetas
+2-papas
+$ 32.5
+2-gaseosa
+2-perro
+$ 3.9

@@ -105,6 +105,16 @@
      <string>Regreasar</string>
     </property>
    </widget>
+   <widget class="QTextBrowser" name="nombrea">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>100</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

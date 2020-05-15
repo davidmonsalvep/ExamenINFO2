@@ -37,6 +37,7 @@ public:
     QSpinBox *spinBox;
     QLabel *label_3;
     QPushButton *pushButton_2;
+    QTextBrowser *nombrea;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -71,6 +72,9 @@ public:
         pushButton_2 = new QPushButton(centralWidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
         pushButton_2->setGeometry(QRect(470, 300, 75, 23));
+        nombrea = new QTextBrowser(centralWidget);
+        nombrea->setObjectName(QStringLiteral("nombrea"));
+        nombrea->setGeometry(QRect(280, 100, 181, 31));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
