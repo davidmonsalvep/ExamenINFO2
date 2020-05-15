@@ -347,6 +347,8 @@ release/moc_entrada.cpp: C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qdialog.h \
 		../ParcialInfo/administrador.h \
 		../ParcialInfo/entrada.h \
+		../ParcialInfo/crearcombo.h \
+		../ParcialInfo/entrada.h \
 		release/moc_predefs.h \
 		C:/Qt/5.9.1/mingw53_32/bin/moc.exe
 	C:\Qt\5.9.1\mingw53_32\bin\moc.exe $(DEFINES) --include release/moc_predefs.h -IC:/Qt/5.9.1/mingw53_32/mkspecs/win32-g++ -I"C:/Users/jalej/Desktop/Parcial Info/ExamenINFO2/ParcialInfo" -IC:/Qt/5.9.1/mingw53_32/include -IC:/Qt/5.9.1/mingw53_32/include/QtWidgets -IC:/Qt/5.9.1/mingw53_32/include/QtGui -IC:/Qt/5.9.1/mingw53_32/include/QtANGLE -IC:/Qt/5.9.1/mingw53_32/include/QtCore -I. -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward ..\ParcialInfo\entrada.h -o release\moc_entrada.cpp
@@ -451,6 +453,16 @@ release/moc_administrador.cpp: C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QWidget 
 		C:/Qt/5.9.1/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtGui/qtouchdevice.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qdialog.h \
+		../ParcialInfo/entrada.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qicon.h \
+		../ParcialInfo/administrador.h \
+		../ParcialInfo/crearcombo.h \
 		../ParcialInfo/administrador.h \
 		release/moc_predefs.h \
 		C:/Qt/5.9.1/mingw53_32/bin/moc.exe
@@ -556,6 +568,16 @@ release/moc_crearcombo.cpp: C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.9.1/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtGui/qtouchdevice.h \
+		../ParcialInfo/administrador.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qdialog.h \
+		../ParcialInfo/entrada.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qicon.h \
+		../ParcialInfo/crearcombo.h \
 		../ParcialInfo/crearcombo.h \
 		release/moc_predefs.h \
 		C:/Qt/5.9.1/mingw53_32/bin/moc.exe
@@ -722,7 +744,8 @@ release/main.o: ../ParcialInfo/main.cpp C:/Qt/5.9.1/mingw53_32/include/QtWidgets
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QMessageBox \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qmessagebox.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qdialog.h \
-		../ParcialInfo/administrador.h
+		../ParcialInfo/administrador.h \
+		../ParcialInfo/crearcombo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\ParcialInfo\main.cpp
 
 release/mainwindow.o: ../ParcialInfo/mainwindow.cpp ../ParcialInfo/mainwindow.h \
@@ -865,8 +888,21 @@ release/mainwindow.o: ../ParcialInfo/mainwindow.cpp ../ParcialInfo/mainwindow.h 
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QMenuBar \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qmenubar.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qmenu.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QSpinBox \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qspinbox.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QStatusBar \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qstatusbar.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QTextBrowser \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qtextbrowser.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qtextedit.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qtextdocument.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qtextcursor.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qtextformat.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qpen.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QToolBar \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qtoolbar.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QWidget
@@ -981,6 +1017,7 @@ release/entrada.o: ../ParcialInfo/entrada.cpp ../ParcialInfo/entrada.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qmessagebox.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qdialog.h \
 		../ParcialInfo/administrador.h \
+		../ParcialInfo/crearcombo.h \
 		ui_entrada.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtCore/QVariant \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QAction \
@@ -1127,11 +1164,19 @@ release/administrador.o: ../ParcialInfo/administrador.cpp ../ParcialInfo/adminis
 		C:/Qt/5.9.1/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtGui/qtouchdevice.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qdialog.h \
+		../ParcialInfo/entrada.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qicon.h \
+		../ParcialInfo/crearcombo.h \
 		ui_administrador.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtCore/QVariant \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QAction \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qaction.h \
-		C:/Qt/5.9.1/mingw53_32/include/QtGui/qicon.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qactiongroup.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QApplication \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qapplication.h \
@@ -1158,7 +1203,6 @@ release/administrador.o: ../ParcialInfo/administrador.cpp ../ParcialInfo/adminis
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qabstractslider.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qstyle.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qtabbar.h \
-		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qrubberband.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QLabel \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qlabel.h \
@@ -1172,7 +1216,13 @@ release/administrador.o: ../ParcialInfo/administrador.cpp ../ParcialInfo/adminis
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QSpinBox \
-		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qspinbox.h
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qspinbox.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QTextBrowser \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qtextbrowser.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qtextedit.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qtextdocument.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtCore/QFile \
+		C:/Qt/5.9.1/mingw53_32/include/QtCore/QTextStream
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\administrador.o ..\ParcialInfo\administrador.cpp
 
 release/crearcombo.o: ../ParcialInfo/crearcombo.cpp ../ParcialInfo/crearcombo.h \
@@ -1276,7 +1326,61 @@ release/crearcombo.o: ../ParcialInfo/crearcombo.cpp ../ParcialInfo/crearcombo.h 
 		C:/Qt/5.9.1/mingw53_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.9.1/mingw53_32/include/QtGui/qtouchdevice.h \
-		ui_crearcombo.h
+		../ParcialInfo/administrador.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qdialog.h \
+		../ParcialInfo/entrada.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QMainWindow \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qicon.h \
+		ui_crearcombo.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtCore/QVariant \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QAction \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qaction.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qactiongroup.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QApplication \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qapplication.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtCore/qeventloop.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qguiapplication.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qinputmethod.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QButtonGroup \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qbuttongroup.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QHeaderView \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qheaderview.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qabstractitemview.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qstyleoption.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qvalidator.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtCore/qregularexpression.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qslider.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qabstractslider.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qstyle.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qtabbar.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QLabel \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qlabel.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QLineEdit \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qlineedit.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qtextcursor.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qtextformat.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qtextoption.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/QTextBrowser \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qtextbrowser.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtWidgets/qtextedit.h \
+		C:/Qt/5.9.1/mingw53_32/include/QtGui/qtextdocument.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\crearcombo.o ..\ParcialInfo\crearcombo.cpp
 
 release/qrc_resource.o: release/qrc_resource.cpp 

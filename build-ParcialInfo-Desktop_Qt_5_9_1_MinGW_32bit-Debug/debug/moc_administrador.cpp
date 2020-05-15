@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../ParcialInfo/administrador.h"
+#include "../../ExamenINFO2/ParcialInfo/administrador.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
@@ -90,6 +90,7 @@ void administrador::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 1: _t->on_estadisticas_clicked(); break;
         case 2: _t->on_combos_clicked(); break;
         case 3: _t->on_back_clicked(); break;
+
         case 5: _t->on_inventario_clicked(); break;
         default: ;
         }
