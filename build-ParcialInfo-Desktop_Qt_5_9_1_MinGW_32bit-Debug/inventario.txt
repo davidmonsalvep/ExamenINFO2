@@ -1,4 +1,0 @@
-crispetas,2
-gaseosa,2
-papas,2
-perro,3

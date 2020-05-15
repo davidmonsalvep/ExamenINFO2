@@ -7,6 +7,7 @@
 #include <iterator>
 #include <iostream>
 #include <QString>
+#include <QMessageBox>
 #include "entrada.h"
 #include <vector>
 
