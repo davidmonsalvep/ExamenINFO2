@@ -110,9 +110,9 @@ void crearcombo::on_fijar_clicked()
 
     archi.open("listacombos.txt",ios::app | ios::ate);        //escribe en el archivo listacombos el nuevo combo
     for(it=mapa.begin();it!=mapa.end();it++){
-        archi<<it->second<<"-"<<it->first;
+        archi<<it->second<<"-"<<it->first<<",";
     }
-    archi<<"$ "<<valorventa<<endl;
+    archi<<",$ "<<valorventa<<endl;
 
 
 

@@ -7,6 +7,7 @@
 #include <iterator>
 #include <iostream>
 #include <QString>
+#include "entrada.h"
 using namespace std;
 
 namespace Ui {
@@ -23,6 +24,8 @@ public:
 
 private slots:
     void on_pushButton_2_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;

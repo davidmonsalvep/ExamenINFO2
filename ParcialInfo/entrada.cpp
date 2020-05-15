@@ -63,7 +63,7 @@ void Entrada::on_clientes_clicked()  //para entrar al modo cliente
 
     ofstream archivo;
     archivo.open("clientes.txt",std::ios::app | std::ios::ate); //para escribir en el archivo que guarda el nombre y asiento del cliente
-    archivo<<nomb<<" Asiento: "<<asi<<endl;
+    archivo<<"Nombre: "<<nomb<<" Asiento: "<<asi<<endl;
     archivo.close();
     QMessageBox::about(this,"Hecho","Listo! Que deseas ordenar.");
 

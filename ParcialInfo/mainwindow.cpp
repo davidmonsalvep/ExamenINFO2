@@ -23,6 +23,7 @@ MainWindow::MainWindow(QWidget *parent) :
     int aux=1;
     if(archi.is_open()){
         while(getline(archi,lin)){
+
             string auxi=to_string(aux);
             QString numerocom=QString::fromStdString(auxi);
             QString linea=QString::fromStdString(lin);
@@ -46,5 +47,24 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_2_clicked()
 {
+    Entrada* MainWindow=new Entrada();  //cambia de formulario
+    MainWindow->show();
+    this->close();
 
+
+
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+ int nucombo =ui->spinBox->value();
+ ifstream archivo("listacombos.txt");
+ string line;
+
+ if (archivo.is_open()){   //para poner el nombre y el asiento
+     while(getline(archivo,line)){
+         QString qstr = QString::fromStdString(line);
+
+}}
+ archivo.close();
 }
