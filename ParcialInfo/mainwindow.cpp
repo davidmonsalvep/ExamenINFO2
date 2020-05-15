@@ -24,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent) :
     if(archi.is_open()){
         while(getline(archi,lin)){
 
-            string auxi=to_string(aux);
+            string auxi=to_string(aux); //numero del combo
             QString numerocom=QString::fromStdString(auxi);
             QString linea=QString::fromStdString(lin);
             ui->textBrowser->append(numerocom);
@@ -60,11 +60,59 @@ void MainWindow::on_pushButton_clicked()
  int nucombo =ui->spinBox->value();
  ifstream archivo("listacombos.txt");
  string line;
+ string combo;
+ int aux=1;
 
- if (archivo.is_open()){   //para poner el nombre y el asiento
+ if (archivo.is_open()){       //para obtener el combo que corresponde al numero ingresado por el cliente
      while(getline(archivo,line)){
-         QString qstr = QString::fromStdString(line);
+       if(aux==nucombo){
+           combo=line;   //guara la linea del combo
+       break;
+       }
+       else
+     aux++;
 
 }}
+ aux=0;
+
  archivo.close();
+ map<string,string>compra;
+ char splitter=',';
+ string clave;
+ string valor;
+ for(string::iterator it=combo.begin();it!=combo.end();it++){
+     if((*it)!=splitter){
+     if((aux%2)==0)
+          clave=clave+(*it);
+     if((aux%2)!=0)
+         valor=valor+(*it);
+     }
+     else{
+         aux++;
+
+     }
+     if(aux%2==0){
+         compra.insert(pair<string,string>(clave,valor));
+     }
+ }
+ ofstream archi;
+
+ archi.open("pruebas.txt",ios::app | ios::ate);
+ for(map<string,string>::iterator it=compra.begin();it!=compra.end();it++)
+     archi<<it->first<<","<<it->second<<endl;
+ archi.close();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

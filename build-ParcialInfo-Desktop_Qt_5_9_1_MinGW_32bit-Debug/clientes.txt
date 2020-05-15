@@ -1,1 +1,1 @@
-Nombre: hola Asiento: a
+Nombre: a Asiento: a

@@ -8,6 +8,8 @@
 #include <iostream>
 #include <QString>
 #include "entrada.h"
+#include <vector>
+
 using namespace std;
 
 namespace Ui {
